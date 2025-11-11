@@ -1,7 +1,7 @@
 
 .title{
     color: black;
-    font-size: 86px;
+    font-size: 50px;
     font-family: Chelsea Market;
     font-weight: 400;
     word-wrap: break-word;
@@ -9,47 +9,89 @@
     transition: height 0.2s ease;
 }
 
-@media (max-width: 768px) {
-  .title {
-     font-size: 46px;
-  }
-}
-
 @media (max-width: 576px) {
   .title {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 
 .title-heading{
     color: black;
-    font-size: 30px;
+    font-size: 15px;
     font-family: Cedarville Cursive;
     font-weight: 400;
     word-wrap: break-word;
     text-align: center;
-}
-
-@media (max-width: 768px) {
-  .title-heading {
-     font-size: 26px;
-  }
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 @media (max-width: 576px) {
   .title-heading {
-    font-size: 16px;
+    font-size: 10px;
   }
 }
 
-.title-heading2{
-    color: black;
-    font-size: 10px;
-    font-family: Chelsea Market;
-    font-weight: 200;
-    word-wrap: break-word;
-    text-align: center;
+nav{
+    margin: 15px;
+    border-radius: 25px;
 }
+
+.nav-toggle-img {
+  margin-right: 10px;
+  height: 60px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.nav-toggle-img:hover {
+  transform: scale(1.05);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  box-shadow: none !important; 
+  outline: none !important; 
+  background: transparent !important; 
+}
+
+.social-nav-logo{
+    margin-right: 25px;
+}
+
+.navbar-brand{
+    margin: 10px;
+}
+
+.navbar-nav .nav-link{
+  color: black;
+  font-size: 20px;
+  font-family: Chelsea Market;
+  font-weight: 0;
+  word-wrap: break-word;
+  text-align: center;
+  transition: height 0.2s ease;
+  margin: auto 20px;
+  padding-bottom: 1rem;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .sky{

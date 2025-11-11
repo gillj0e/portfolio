@@ -5,8 +5,11 @@ html, body {
   height: 100vh; 
 }
 
+body{
+  padding-top: 170px;
+}
+
 main{
-    padding-bottom: 5%;
 }
 
 
