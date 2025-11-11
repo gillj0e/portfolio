@@ -80,6 +80,11 @@ a {
   text-decoration: underline;
 }
 
+a.link {
+  color: #000000;
+}
+
+
 
 
 
@@ -158,13 +163,12 @@ a {
 
 .carousel-container {
     max-width: 65%;
-    height: 100%;            /* <--- fixed height here! */
+              /* <--- fixed height here! */
     margin: 30px auto;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.22);
     border-radius: 25px;
     overflow: hidden;
     position: relative;
-    background: #fff;
 }
 
 .carousel{
@@ -219,28 +223,93 @@ a {
     margin-left: 15px;
 }
 
+
+
+
+
+
+
+
+/* ABOUT */
+.carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: rgb(0, 0, 0);
+   
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: scroll-left 20s linear infinite;
+    padding: 1rem;
+    will-change: transform;
+}
+
+.carousel-track img {
+    height: 300px;
+    aspect-ratio: 3 / 4; 
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes scroll-left {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-50%);
+    }
+}
+
+
+.carousel-track > * {
+    flex: 0 0 auto;
+}
+
+.text-primary{
+    color: rgb(83, 151, 83);
+}
+
+
+
+
+
+
+/* PROJECTS */
 .project-title{
-    color: #25B570;
-    font-size: 24px;
-    font-family: ADLaM Display;
+    color: black;
+    font-size: 50px;
+    font-family: Chelsea Market;
     font-weight: 400;
     word-wrap: break-word;
+    text-align: left;
+    transition: height 0.2s ease;
 }
 
-.project-info{
-    color: #726F6F;
-    font-size: 20px;
-    font-family: ADLaM Display;
+.project-heading{
+  color: black;
+    font-size: 35px;
+    font-family:  Chelsea Market;
     font-weight: 400;
-    text-decoration: underline;
     word-wrap: break-word;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
-.project-body{
-    color: #726F6F;
+.project-status{
     font-size: 20px;
-    font-family: ADLaM Display;
+    font-family:  Chelsea Market;
     font-weight: 400;
     word-wrap: break-word;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
+
 

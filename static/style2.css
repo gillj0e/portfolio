@@ -1,70 +1,32 @@
-html, body {
+html, body{
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100vh; 
-  background: linear-gradient(180deg, #71A5D4 0%, #B6D3EE 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;  /* makes it cover as you scroll */
-  background-size: cover;
+}
+
+.sky{
+    background: linear-gradient(180deg, #71A5D4 0%, #B6D3EE 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /* makes it cover as you scroll */
+    background-size: cover;
+}
+
+.white{
+}
+
+.black{
+    background: linear-gradient(1deg, #000000 0%, #171717 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  /* makes it cover as you scroll */
+    background-size: cover;
 }
 
 body{
   padding-top: 170px;
 }
 
-main{
-
-}
 
 
 
 
-
-
-
-
-/* ABOUT */
-.carousel-wrapper {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background: rgb(0, 0, 0);
-   
-}
-
-.carousel-track {
-    display: flex;
-    gap: 1rem;
-    width: max-content;
-    animation: scroll-left 20s linear infinite;
-    padding: 1rem;
-    will-change: transform;
-}
-
-.carousel-track img {
-    height: 300px;
-    aspect-ratio: 3 / 4; 
-    object-fit: cover;
-    border-radius: 8px;
-    flex-shrink: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-@keyframes scroll-left {
-    0% {
-    transform: translateX(0);
-    }
-    100% {
-    transform: translateX(-50%);
-    }
-}
-
-
-.carousel-track > * {
-    flex: 0 0 auto;
-}
-
-.text-primary{
-    color: rgb(83, 151, 83);
-}
