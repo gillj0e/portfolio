@@ -12,9 +12,6 @@ html, body{
     background-size: cover;
 }
 
-.white{
-}
-
 .black{
     background: linear-gradient(1deg, #000000 0%, #171717 100%);
     background-repeat: no-repeat;

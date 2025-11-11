@@ -84,6 +84,33 @@ a.link {
   color: #000000;
 }
 
+a.card-title {
+  color: #000000;
+  text-decoration:underline;
+}
+
+.card{
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.card .row {
+  height: 100%;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-body .mt-auto {
+  margin-top: auto; /* pushes the date to the bottom */
+}
 
 
 
@@ -221,6 +248,13 @@ a.link {
 
 .text-box{
     margin-left: 15px;
+}
+
+.middle{
+  max-width: 65%;
+  margin: 30px auto;
+  overflow: hidden;
+  position: relative;
 }
 
 
