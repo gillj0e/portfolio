@@ -21,7 +21,8 @@
     width: 100%; 
     height: 100%; 
     position: relative; 
-    background: linear-gradient(180deg, #71A5D4 0%, #B6D3EE 100%); 
+    background-image: url("static/images/mountain.png");
+    /*background: linear-gradient(180deg, #71A5D4 0%, #B6D3EE 100%);*/
 }
 
 
@@ -37,18 +38,18 @@
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    margin: 0.5%;
+    margin: 5%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     transition: none;
-    transform: none;
+    transform: none; 
 }
 
 .carousel-indicators {
-    width: 40px;
+    width: 25%;
     margin: 0.5%;
     bottom: 10px;     
-    left: 10px;       
+    left: 10px;     
 }
 
 .carousel-indicators li {
