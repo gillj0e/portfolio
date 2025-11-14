@@ -211,12 +211,19 @@ a.card-title {
 
 .carousel-img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;       /* fill and crop as needed, never stretch */
     display: block;
     border-radius: 0;        /* corners by container */
     margin: 0;
     box-shadow: none;
+}
+
+.carousel-img-vertical {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* show the entire vertical image */
+  background-color: #000; /* optional: adds a black border instead of white if aspect ratios differ */
 }
 
 .carousel-control-prev-icon,
@@ -317,7 +324,7 @@ a.card-title {
 /* PROJECTS */
 .project-title{
     color: black;
-    font-size: 50px;
+     font-size: clamp(1.8rem, 5vw, 3rem);
     font-family: Chelsea Market;
     font-weight: 400;
     word-wrap: break-word;
@@ -327,7 +334,7 @@ a.card-title {
 
 .project-heading{
   color: black;
-    font-size: 35px;
+    font-size: clamp(1.2rem, 3.5vw, 2.2rem);
     font-family:  Chelsea Market;
     font-weight: 400;
     word-wrap: break-word;
