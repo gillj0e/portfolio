@@ -83,16 +83,79 @@
         <!-- Main -->
          <main class="container-fluid px-0">
             <section id="me" class= "pb-0 p-5">
+                <img class="d-block" src="static/images/projects/phish/bowl.png" alt="Phishbowl Logo" width="200px">
                 <h1 class="project-title">The Phish Bowl</h1>
                 <h2 class="project-heading">Internship Capstone Project</h2>
                 <p></p>
-                <img class="d-block" src="static/images/projects/phish/bowl.png" alt="Phishbowl Logo" width="200px">
+
+                <!-- HORIZONTAL CAROUSEL (shown on medium+ screens) -->
+<div class="all-carousel d-none d-md-block">
+  <div class="carousel-container">
+    <div id="carouselHorizontal" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block carousel-img" src="static/images/projects/phish/phish1.png" alt="Marketing Photography">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-img" src="static/images/projects/phish/phish2.png" alt="Marketing Photography">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-img" src="static/images/projects/phish/phish3.png" alt="Photography Website">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-img" src="static/images/projects/phish/phish4.png" alt="Photography Website">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHorizontal" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHorizontal" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- VERTICAL CAROUSEL (shown only on small screens) -->
+<div class="all-carousel d-block d-md-none">
+  <div class="carousel-container">
+    <div id="carouselVertical" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block carousel-img-vertical" src="static/images/projects/phish/pm1.png" alt="Vertical Photo 1">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-img-vertical" src="static/images/projects/phish/pm2.png" alt="Vertical Photo 1">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-img-vertical" src="static/images/projects/phish/pm3.png" alt="Vertical Photo 1">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-img-vertical" src="static/images/projects/phish/pm4.png" alt="Vertical Photo 1">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block carousel-img-vertical" src="static/images/projects/phish/pm5.png" alt="Vertical Photo 1">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselVertical" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselVertical" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
 
 
                 <div class="container">
                         <div class="row pt-5">
                             <!-- Project Details -->
-                            <div class="col-md-4 mb-0 mb-md-4">
+                            <div class="col-md-8 mb-0 mb-md-4">
                                 <h1 class="project-status">Project Details:</h1>
                                 <p>A full-stack web application that gamifies phishing-awareness training for employees. Built with Python (Flask), JavaScript, HTML/CSS, and SQL, the platform challenges users to identify phishing emails through timed rounds and instant feedback. It features user authentication, score tracking, leaderboards, and an admin dashboard for monitoring engagement. Hosted on Microsoft Azure, Phish Bowl combines cybersecurity education with interactive gameplay to make learning about digital safety engaging and effective.</p>
                                 <h1 class="project-status">Project Status: <span class="badge text-bg-secondary" style="color: black; background-color: rgb(180, 241, 119); border-radius: 10px;">Demo Completed</span></h3>
@@ -102,6 +165,10 @@
                                  <h1 class="project-status">Project Link:</h1>
                                 <a class="link" href="https://phishbowl-demo.azurewebsites.net" target="_blank" rel="noopener noreferrer">The Phish Bowl - Demo</a>
                                 <p></p>
+                            </div>
+
+                            <!-- Skills -->
+                            <div class="col-md-4 d-flex flex-column">
                                 <h1 class="project-status">Skills Displayed</h1>
                                 <ul>
                                     <li>UI Design</li>
@@ -110,43 +177,8 @@
                                     <li>Webhosting (Microsoft Azure)</li>
                                     <li>GIT</li>
                                 </ul>
-                            </div>
-
-                            <!-- Skills -->
-                            <div class="col-md-8 d-flex flex-column">
                                 <!--Photos-->
-                                <div class="all-carousel">
-                                    <div class="carousel-container">
-                                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block carousel-img" src="static/images/projects/phish/3.png" alt="Marketing Photography">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block carousel-img" src="static/images/projects/phish/4.png" alt="Photography Website">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block carousel-img" src="static/images/projects/phish/5.png" alt="Photography Website">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block carousel-img" src="static/images/projects/phish/6.png" alt="Photography Website">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Arrows -->
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            <div class="col-md-8 d-flex flex-column"></div>
+                                
                         </div>
                     </div>
             </section>

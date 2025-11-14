@@ -1,12 +1,13 @@
 
 .title{
     color: black;
-    font-size: 50px;
+    font-size: 30px;
     font-family: Chelsea Market;
     font-weight: 400;
     word-wrap: break-word;
     text-align: center;
     transition: height 0.2s ease;
+    margin: 0 0;
 }
 
 @media (max-width: 576px) {
@@ -119,9 +120,6 @@ a.card-title {
 
 
 
-
-
-
 .nav-photo {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
     border-radius: 100px;
@@ -189,7 +187,7 @@ a.card-title {
 }
 
 .carousel-container {
-    max-width: 65%;
+    max-width: 90%;
               /* <--- fixed height here! */
     margin: 30px auto;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.22);
