@@ -76,10 +76,23 @@ nav{
   padding-bottom: 1rem;
 }
 
+.navbar .dropdown-menu {
+    position: absolute !important;
+    z-index: 5000 !important;
+}
+
+/* Fix: Your custom menu-button image blocks clicks */
+.nav-toggle-img {
+    pointer-events: none !important;
+}
+
+
+/* Only affect links inside normal content, NOT navbars */
 a {
   color: #ffffff;
   text-decoration: underline;
 }
+
 
 a.link {
   color: #000000;
