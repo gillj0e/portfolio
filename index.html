@@ -18,6 +18,9 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="static/style2.css">
@@ -91,6 +94,7 @@
         <!-- MAIN -->
 
         <main>
+
             <!-- HORIZONTAL CAROUSEL (shown on medium+ screens) -->
 <div class="all-carousel d-none d-md-block">
   <div class="carousel-container">
@@ -234,6 +238,19 @@
             </div>
         </main>
 
+        <!-- Toast Container -->
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
+            <div id="homepageToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <strong class="me-auto">⚠️ Website Under Construction!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                This site is fully custom-built with HTML, CSS, and Bootstrap. I’m still actively coding new features and pages. Thanks for visiting while the paint’s still drying!
+              </div>
+            </div>
+          </div>
+
         <!-- Footer -->
         <footer class="mt-0 mb-0 py-3 position-relative bottom">
             <div class="container-fluid text-left">
@@ -242,15 +259,36 @@
         </footer>
 
         <!-- Script -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const toastEl = document.getElementById("welcomeToast");
-            const toast = new bootstrap.Toast(toastEl, { delay: 5000 }); // stays visible for 5s
-            toast.show();
-        });
-        </script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const toastEl = document.getElementById("homepageToast");
+    if (toastEl) {
+        const toast = new bootstrap.Toast(toastEl, { autohide: false });
+        toast.show();
+    }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // If the user has closed it before, don't show it again
+  if (localStorage.getItem("toastDismissed") === "true") {
+    return;
+  }
+
+  const toastEl = document.getElementById("homepageToast");
+  const toast = new bootstrap.Toast(toastEl, { autohide: false });
+  toast.show();
+
+  // When user closes it, save that they dismissed it
+  toastEl.addEventListener('hidden.bs.toast', function () {
+    localStorage.setItem("toastDismissed", "true");
+  });
+});
+</script>
+
 
     </body>
 </html>
